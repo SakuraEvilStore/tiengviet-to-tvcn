@@ -25,15 +25,15 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/SakuraEvilStore/TVCN.git"
+        "url": "https://github.com/SakuraEvilStore/tiengviet-to-tvcn.git"
     },
     "license": {
         "type": "MIT",
-        "url": "https://github.com/SakuraEvilStore/TVCN/blob/master/LICENSE"
+        "url": "https://github.com/SakuraEvilStore/tiengviet-to-tvcn/blob/master/LICENSE"
     },
     "bugs": {
-        "url": "https://github.com/SakuraEvilStore/TVCN/issues"
+        "url": "https://github.com/SakuraEvilStore/tiengviet-to-tvcn/issues"
     },
-    "homepage": "https://github.com/SakuraEvilStore/TVCN#readme",
+    "homepage": "https://github.com/SakuraEvilStore/tiengviet-to-tvcn#readme",
 
 }
