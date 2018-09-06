@@ -1,6 +1,3 @@
-# TVCN
-TVCN
-
 Bộ chuyển đổi tiếng việt theo sách tiếng việt công nghệ cải cách
 
 ### Installation
