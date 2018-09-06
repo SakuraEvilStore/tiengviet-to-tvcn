@@ -1,4 +1,4 @@
-import * as _ from "lodash";
+import words = require("lodash.words") 
 
 const codes = [
     'iê',
@@ -15,10 +15,7 @@ const codes = [
     'ngh',
     'tr',
     'gi'
-]
-
-const sp_code = ['', '.', ',']
-    
+]    
 
 export function convert(text: string): string {
     if (typeof text !== 'string') {
@@ -26,9 +23,15 @@ export function convert(text: string): string {
     }
     var lines = text.split("\r\n").map(lval => {
         console.log(lval);
-        var tokens = _.words(lval).map(val => {
-            var index = codes.findIndex(code => val.indexOf(code) > -1);
-            return index > -1 ? '□' : '△';        
+        var tokens = words(lval).map(val => {
+            var index = codes.findIndex(code => val.indexOf(code) == 0);
+            var index2 = codes.findIndex(code => val.indexOf(code) > 0);
+			if(index > -1 && index2 > -1)
+				return '◯';
+			else if (index == -1 && index2 == -1)
+				return '□';
+			else
+				return '△';
         });
         return tokens.join(' ');
     });
